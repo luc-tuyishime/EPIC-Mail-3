@@ -41,8 +41,8 @@ const User = {
           'message': 'User with that EMAIL already exist'
         })
       }
-      return res.status(400).send({
-        status: 400,
+      return res.status(500).send({
+        status: 500,
         error
       });
     }
@@ -85,7 +85,7 @@ const User = {
         }]
       });
     } catch(error) {
-      return res.status(400).send(error)
+      return res.status(500).send(error)
     }
   }
 }

@@ -1,13 +1,12 @@
 import '@babel/polyfill'
 import express from 'express';
+import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
 
 import Router from './routes/index';
 
 const app = express();
-
-
 
 app.use(express.json());
 
